@@ -9,7 +9,9 @@ $(function() {
     window.data = data;
     
     // Put your code here. Don't change any other code in this file. You will be sad.
-    <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Downtown Boston"> </iframe>;
+    var markup = "The current temperature in Chicago is ";
+    markup = markup + data.currently.temperature;
+    markup = markup + " and it is " + data.currently.summary
     // End of your code. No, really. Don't change anything below this, or above line 11.
 
     // Takes the contents of the "markup" variable (which should contain HTML) 
